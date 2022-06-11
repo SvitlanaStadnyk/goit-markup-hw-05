@@ -63,7 +63,7 @@
       <section class="header">
         <div class="container">
           <h1 class="header-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="header-btn btn">Заказать услугу</button>
+          <button type="button" class="header-btn btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--features-->
@@ -124,31 +124,40 @@
           <h2 class="about-title">Чем мы занимаемся</h2>
           <ul class="about-list list">
             <li class="about-item">
-              <img
-                src="./images/hw-01-1.jpg"
-                class="about-img"
-                alt="печатает на планшете"
-                width="370"
-                height="294"
-              />
+              <div class="about-thumb">
+                <img
+                  src="./images/hw-01-1.jpg"
+                  class="about-img"
+                  alt="печатает на планшете"
+                  width="370"
+                  height="294"
+                />
+                <p class="about-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="about-item">
-              <img
-                src="./images/hw-01-2.jpg"
-                class="about-img"
-                alt="смотрит в телефон"
-                width="370"
-                height="294"
-              />
+              <div class="about-thumb">
+                <img
+                  src="./images/hw-01-2.jpg"
+                  class="about-img"
+                  alt="смотрит в телефон"
+                  width="370"
+                  height="294"
+                />
+                <p class="about-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="about-item">
-              <img
-                src="./images/hw-01-3.jpg"
-                class="about-img"
-                alt="изучает цвета"
-                width="370"
-                height="294"
-              />
+              <div class="about-thumb">
+                <img
+                  src="./images/hw-01-3.jpg"
+                  class="about-img"
+                  alt="изучает цвета"
+                  width="370"
+                  height="294"
+                />
+                <p class="about-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -428,5 +437,15 @@
         </div>
       </address>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="close-btn" width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-Vector-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
